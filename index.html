@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#111b24" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Calistenia+" />
+<meta name="description" content="Tu entrenador personal de calistenia. Entrena, aprende y mejora a tu ritmo." />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icon-192.png" />
+<link rel="icon" href="./app-icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="./styles.css" />
+<title>Calistenia+ · Entrena a tu ritmo</title>
+</head>
+<body>
+<div id="app">
+  <header class="topbar"><div class="brand"><span class="brand-mark">C<span class="brand-plus">+</span></span><span>CALISTENIA<span class="text-accent">+</span></span></div><div class="top-actions"><span class="online-pill" id="network-pill">● Conectado</span><button class="round-btn" id="profile-shortcut" aria-label="Editar perfil">⚙</button></div></header>
+  <main id="main-content" aria-live="polite"></main>
+  <nav class="bottom-nav" aria-label="Secciones">
+    <button data-tab="home" class="nav-item active" aria-label="Inicio"><span class="nav-icon">⌂</span><span>Inicio</span></button>
+    <button data-tab="plan" class="nav-item" aria-label="Plan"><span class="nav-icon">▤</span><span>Mi plan</span></button>
+    <button data-tab="library" class="nav-item" aria-label="Ejercicios"><span class="nav-icon">◉</span><span>Ejercicios</span></button>
+    <button data-tab="progress" class="nav-item" aria-label="Progreso"><span class="nav-icon">▥</span><span>Progreso</span></button>
+  </nav>
+</div>
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="./exercises.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
